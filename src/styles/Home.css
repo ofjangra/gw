@@ -1,0 +1,55 @@
+.upperNav{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 46px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: rgb(39, 39, 39);
+    color:#fff;
+    font-family: DmSansRegular;
+    
+}
+.upperNav ul{
+    height: auto;
+    width: auto;
+    list-style: none;
+    display: flex;
+}
+.upperNav li{
+    margin: 0 12px;
+    opacity: 75%;
+}
+
+.cover{
+    position: fixed;
+    top:46px;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 4px 4px 12px rgb(151, 151, 151);
+    font-family: DmSansRegular;
+}
+
+.cover strong{
+    margin-left: 90px;
+    font-size: 24px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.sheetView{
+    width: 100%;
+    height: 100vh;
+    overflow:scroll
+}
+.sheetView iframe{
+    width: 100%;
+    height: 100%;
+}

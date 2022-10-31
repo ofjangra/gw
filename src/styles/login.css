@@ -1,0 +1,60 @@
+.dashLogin{
+    position: fixed;
+    top:0;
+    left: 0;
+    height:100vh;
+    width:100%;
+    background-color: rgba(46, 46, 46, 0.733);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#closeLogin{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    color: #000;
+    cursor: pointer;
+    font-size: 28px;
+}
+.dashLogin form{
+   background-color: #fff;
+   height: 420px;
+   width: 380px;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-family: DmSansRegular;
+   padding: 0 20px;
+   position: relative;
+}
+.dashLogin .field, .dashLogin button{
+    margin-top: 32px;
+}
+.dashLogin label{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.dashLogin .field{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.dashLogin input{
+    height: auto;
+    width: 100%;
+    padding: 10px 8px;
+    margin: 4px 0;
+}
+.dashLogin p{
+    color:firebrick
+}
+.dashLogin button{
+    width: 100%;
+}
