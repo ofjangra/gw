@@ -82,7 +82,7 @@
         position: fixed;
         top:46px;
         right: 0;
-        height: 90vh;
+        height: 70vh;
         width: 40%;
         display: flex;
         flex-direction: column;
@@ -101,5 +101,10 @@
     }
     .cover strong{
         margin-left: 32px;
+    }
+}
+@media screen and (max-width:420px) {
+    .mobile-nav {
+        width: 70%;
     }
 }
