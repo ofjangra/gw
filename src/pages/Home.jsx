@@ -14,7 +14,6 @@ const getOs = () =>{
     const iosPlatforms = ["iPhone", "iPad", "iPod"]
 
     if (iosPlatforms.includes(platForm) || /Android/.test(userAgent)){
-        alert(platForm)
         setIsMobile(true)
     }
 }
