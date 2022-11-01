@@ -1,11 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Login from "../components/Login";
 import {MenuOutlined} from '@mui/icons-material'
 
 
 const Home = () =>{
+    useEffect(() =>{
+        getOs()
+    },[])
+const getOs = () =>{
+    let userAgent = window.navigator.userAgent
+    let platForm = window.navigator.platform
+
+    const iosPlatforms = ["iPhone", "iPad", "iPod"]
+
+    if (iosPlatforms.includes(platForm) || /Android/.test(userAgent)){
+        alert(platForm)
+        setIsMobile(true)
+    }
+}
 const [loginOpen, setLoginOpen] = useState(false)
 const [navActive, setNavActive] = useState(false)
+const [isMobile, setIsMobile] = useState(false)
 
 return(
     <>
@@ -28,7 +43,7 @@ return(
                 </nav>
         </nav>
         <Login isOpen={loginOpen} onClose = {() => setLoginOpen(false)}/>
-        <section className = "sheetView">
+        <section className = "sheetView" style = {isMobile ? {marginTop:"124px"} : {margin:"0"}}>
                 <iframe src="https://docs.google.com/spreadsheets/d/1BhJJE8zbLbtTOQHu6gEG1UsHzMNKa5BIVnMVTPOqy1A/edit#gid=1500776947" name="myFrame"></iframe>
         </section>
     </>
