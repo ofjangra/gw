@@ -58,7 +58,7 @@ const Login = ({isOpen, onClose}) =>{
                         <p>{formik.errors.password}</p> :
                         null}
                     </div>
-                    <Button variant="contained">Login</Button>
+                    <Button variant="contained" onClick = {formik.submitForm}>Login</Button>
                 </form>
             </div>
         </>, document.getElementById('modalRoot')
